@@ -1,0 +1,1 @@
+docker volume ls -q | Where-Object {$_ -ne 'environment_mysql_data'} | ForEach-Object {docker volume rm $_}
