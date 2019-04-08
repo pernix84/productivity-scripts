@@ -3,7 +3,7 @@
 FIND="find"
 
 # For windows
-if [ ! "$OSTYPE" == "msys" ] 
+if [ "$OSTYPE" == "msys" ] 
 then
     FIND="$CMDER_ROOT\\vendor\\git-for-windows\\usr\\bin\\find.exe"
 fi
